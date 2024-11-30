@@ -1,0 +1,16 @@
+# jetbrain
+.idea
+
+# visual studio code
+.vscode
+
+# node_modules
+node_modules
+
+# build output
+build
+
+package-lock.json
+
+# environment file
+.env
