@@ -21,4 +21,11 @@ contract("CharityDonationCampaign", function (/* accounts */) {
         const campaigns = await charityDonationInstance.getAllCampaigns();
         assert.isArray(campaigns, "Campaigns should be an array");
     });
+
+    // get the total number of campaigns
+    it("should get the total number of campaigns", async function () {
+        const totalCampaigns = await charityDonationInstance.getTotalCampaigns();
+        // the total number of campaigns should be 0
+        assert.equal(totalCampaigns, 0, "Total number of campaigns should be 0");
+    });
 });
