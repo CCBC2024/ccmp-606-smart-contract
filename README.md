@@ -20,9 +20,20 @@ truffle compile
 ```
 
 ## Test
-To run the tests, you can use the following command:
+Currently, we just added two tests to ensure that the smart contract is deployed successfully.
+In the future, we will add more tests to cover all the functionalities of the smart contract.
+All functionalities of the smart contract are tested manually.
+
+### Ganache
+To run the tests on a local blockchain, you can use the following command:
 ```
-truffle test
+truffle test --network development
+```
+
+### Sepolia Testnet
+To run the tests on the Sepolia testnet, you can use the following command:
+```
+truffle test --network sepolia
 ```
 
 ## Deploy Smart Contract
